@@ -1,3 +1,4 @@
+import 'package:contacts_app/call_logs.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class ContactsApp extends StatelessWidget {
     return MaterialApp(
       title: 'Contacts',
       theme: theme,
-      home: const Text("Home"),
+      home: const CallLogsList(),
     );
   }
 }
