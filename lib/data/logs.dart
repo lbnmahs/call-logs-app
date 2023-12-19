@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 
 class CallLog {
-  const CallLog({required this.name, required this.icon, required this.time});
+  const CallLog({
+    required this.name, 
+    required this.icon, 
+    required this.time, 
+    required this.number
+  });
 
   final String name;
   final Icon icon;
   final String time;
+  final String number;
 
 }
 
@@ -13,47 +19,56 @@ const availableCallLogs = [
   CallLog(
     icon: Icon(Icons.call_made_rounded, color: Colors.green,), 
     name: 'Elliott',
-    time: "10:30 PM"
+    time: "10:30 PM",
+    number: "+254769569696"
   ),
   CallLog(
     icon: Icon(Icons.call_missed_rounded, color: Colors.red), 
     name: 'Marilyn Monroe',
-    time: "10:23 PM"
+    time: "10:23 PM",
+    number: "+254769569696"
   ),
   CallLog(
     icon: Icon(Icons.call_missed_outgoing_rounded, color: Colors.red), 
     name: 'James Harden',
-    time: "10:15 PM"
+    time: "10:15 PM",
+    number: "+254769569696"
   ),
   CallLog(
     icon: Icon(Icons.call_missed_outgoing_rounded, color: Colors.red), 
     name: 'Joseph Dary',
-    time: "9:30 PM"
+    time: "9:30 PM",
+    number: "+254769569696"
   ),
   CallLog(
     icon: Icon(Icons.call_made_rounded, color: Colors.green), 
     name: 'Don Polo Julio',
-    time: "9:07 PM"
+    time: "9:07 PM",
+    number: "+254769569696"
   ),
   CallLog(
     icon: Icon(Icons.call_made_rounded, color: Colors.green), 
     name: 'Kim Jay',
-    time: "6:44 PM"
+    time: "6:44 PM",
+    number: "+254769569696",
   ),
   CallLog(
     icon: Icon(Icons.call_missed_outgoing_rounded, color: Colors.red), 
     name: 'Sabrina Markov',
-    time: "3:25 PM"
+    time: "3:25 PM",
+    number: "+254769569696"
   ),
   CallLog(
     icon: Icon(Icons.call_made_rounded, color: Colors.green), 
     name: 'Lou Phelps',
-    time: "9:07 AM"
+    time: "9:07 AM",
+    number: "+254769569696"
   ),
   CallLog(
     icon: Icon(Icons.call_missed_outgoing_rounded, color: Colors.red), 
     name: 'Naira Marley',
-    time: "6:49 AM"
+    time: "6:49 AM",
+    number: "+254769569696"
   ),
 ];
 

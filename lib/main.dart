@@ -1,5 +1,6 @@
 import 'package:contacts_app/call_logs.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const ContactsApp());
@@ -10,6 +11,7 @@ final theme = ThemeData(
     brightness: Brightness.dark
   ),
   useMaterial3: true,
+  textTheme: GoogleFonts.poppinsTextTheme()
 );
 
 class ContactsApp extends StatelessWidget {
