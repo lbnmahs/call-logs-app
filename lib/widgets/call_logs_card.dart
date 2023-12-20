@@ -14,7 +14,7 @@ class CallLogCard extends StatelessWidget {
         
         leading: CircleAvatar(
           child: Text(
-            callLog.name.isNotEmpty ? callLog.name[0] : ''
+            callLog.name.isNotEmpty ? callLog.name[0].toUpperCase() : ''
           ),
         ),
         title: Text(callLog.name),

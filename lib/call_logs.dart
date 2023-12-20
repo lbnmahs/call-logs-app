@@ -32,7 +32,7 @@ class _CallLogsList extends State<CallLogsList> {
               child: const Padding(
                 padding: EdgeInsets.all(10),
                 child: Text(
-                  'Deleted',
+                  'Delete',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,
