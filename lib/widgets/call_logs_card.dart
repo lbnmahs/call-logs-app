@@ -8,13 +8,19 @@ class CallLogCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: CircleAvatar(
-        child: Text(callLog.name[0]),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 2),
+      child: ListTile(
+        
+        leading: CircleAvatar(
+          child: Text(
+            callLog.name.isNotEmpty ? callLog.name[0] : ''
+          ),
+        ),
+        title: Text(callLog.name),
+        subtitle: Text(callLog.number),
+        trailing: Text(callLog.time),
       ),
-      title: Text(callLog.name),
-      subtitle: Text(callLog.number),
-      trailing: Text(callLog.time),
     );
   }
 }

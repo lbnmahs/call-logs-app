@@ -21,10 +21,32 @@ class _CallLogsList extends State<CallLogsList> {
         title: const Text("Call Logs"),
       ),
       body: ListView.builder(
+        itemCount: availableCallLogs.length,
         itemBuilder: (ctx, index) {
           return Dismissible(
             key: ValueKey(calls[index]), 
-            child: CallLogCard(callLog: calls[index],)
+            background: Container(
+              color: Theme.of(context).colorScheme.errorContainer,
+              alignment: Alignment.centerLeft,
+              margin: const EdgeInsets.symmetric(horizontal: 10),
+              child: const Padding(
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  'Deleted',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 15,
+                  ),
+                ),
+              ),
+            ),
+            
+            child: CallLogCard(callLog: calls[index],),
+            onDismissed: (direction) {
+              setState(() {
+                calls.removeAt(index);
+              });
+            },
           );
         }
       )
