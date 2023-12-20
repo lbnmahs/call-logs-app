@@ -27,7 +27,7 @@ class _CallLogsList extends State<CallLogsList> {
             key: ValueKey(calls[index]), 
             background: Container(
               color: Theme.of(context).colorScheme.errorContainer,
-              alignment: Alignment.centerLeft,
+              alignment: Alignment.centerRight,
               margin: const EdgeInsets.symmetric(horizontal: 10),
               child: const Padding(
                 padding: EdgeInsets.all(10),
