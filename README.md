@@ -3,6 +3,8 @@
 
 This is a simple call logs app aiming to show how to implement the Dismissible Widget in Flutter.
 
+![demo](https://github.com/lbnmahs/call-logs-app/blob/main/demo.gif)
+
 
 ## Getting Started
 
